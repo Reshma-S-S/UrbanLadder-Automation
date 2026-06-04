@@ -3,14 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.cts.urbanladder.test.BeingAtHomeTest">
+      <class name="com.cts.urbanladder.test.BookshelvesExcludeTest">
         <methods>
+          <include name="printBookshelvesDetails"/>
           <include name="tearDown"/>
-          <include name="displaySubMenuItems"/>
+          <include name="openBookshelvesPage"/>
+          <include name="filterBookshelves"/>
           <include name="setup"/>
-          <include name="searchBeingAtHome"/>
+          <include name="closeAd"/>
         </methods>
-      </class> <!-- com.cts.urbanladder.test.BeingAtHomeTest -->
+      </class> <!-- com.cts.urbanladder.test.BookshelvesExcludeTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

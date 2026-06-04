@@ -13,7 +13,7 @@ public class Bookshelves_Page extends HomePage{
 		super(driver);
 	}
 
-	@FindBy(xpath="//h2[text()='Storage Type']")
+	@FindBy(xpath="//span[text()='Storage Type']")
 	WebElement storageTypeBox;
 	
 	@FindBy(xpath="//div[@id='dropdown-menu-storage-type']//*[contains(text(), 'Open Storage')]")
@@ -72,6 +72,7 @@ public class Bookshelves_Page extends HomePage{
 		//js.executeScript("arguments[0].scrollIntoView(true);", stock);
 		//stock.click();
       stock.click();
+      wait.until(ExpectedConditions.visibilityOf(outStock));
       outStock.click();
       
         
