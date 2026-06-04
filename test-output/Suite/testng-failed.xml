@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="browser" value="chrome"/>
+  <listeners>
+    <listener class-name="com.cts.urbanladder.util.ExtentReport"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.cts.urbanladder.test.BookshelvesExcludeTest">
+        <methods>
+          <include name="printBookshelvesDetails"/>
+          <include name="tearDown"/>
+          <include name="openBookshelvesPage"/>
+          <include name="filterBookshelves"/>
+          <include name="setup"/>
+          <include name="closeAd"/>
+        </methods>
+      </class> <!-- com.cts.urbanladder.test.BookshelvesExcludeTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
