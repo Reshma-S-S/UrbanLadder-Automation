@@ -30,8 +30,5 @@ Automated testing of UrbanLadder web application using Selenium WebDriver with P
 2. Import as Maven project
 3. Run `testng.xml`
 
-##  Screenshots
-(Add screenshots if available)
-
 ##  Author
 Reshma S S
