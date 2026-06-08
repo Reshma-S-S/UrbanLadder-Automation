@@ -3,16 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.cts.urbanladder.test.BookshelvesExcludeTest">
+      <class name="com.cts.urbanladder.test.StudyChairsTest">
         <methods>
-          <include name="printBookshelvesDetails"/>
+          <include name="searchStudyChairs"/>
           <include name="tearDown"/>
-          <include name="openBookshelvesPage"/>
-          <include name="filterBookshelves"/>
+          <include name="displayStudyChairsDetails"/>
           <include name="setup"/>
-          <include name="closeAd"/>
         </methods>
-      </class> <!-- com.cts.urbanladder.test.BookshelvesExcludeTest -->
+      </class> <!-- com.cts.urbanladder.test.StudyChairsTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
